@@ -4,6 +4,8 @@ import akka.actor._
 import akka.cluster.ClusterEvent.{InitialStateAsEvents, MemberEvent, MemberRemoved, MemberUp, UnreachableMember}
 import akka.cluster.Cluster
 import akka.event.LoggingReceive
+import com.newrelic.api.agent.NewRelic
+
 
 class ChatRoom extends Actor with ActorLogging {
   val cluster = Cluster(context.system)

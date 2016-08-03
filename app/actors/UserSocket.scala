@@ -6,6 +6,7 @@ import akka.actor.{Actor, ActorLogging, ActorRef, Props}
 import akka.event.LoggingReceive
 import play.api.libs.json.{Writes, JsPath, JsValue, JsString, JsObject, JsArray, Json}
 import play.api.libs.functional.syntax._
+import com.newrelic.api.agent.NewRelic
 
 import scala.xml.Utility
 import scala.concurrent.duration._

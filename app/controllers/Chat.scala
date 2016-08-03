@@ -12,6 +12,8 @@ import play.api.i18n.{I18nSupport, MessagesApi}
 import play.api.libs.json.JsValue
 import play.api.libs.streams.ActorFlow
 import play.api.mvc.{Action, Controller, WebSocket}
+import com.newrelic.api.agent.NewRelic
+
 
 import scala.concurrent.Future
 
