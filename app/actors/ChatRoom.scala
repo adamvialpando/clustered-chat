@@ -8,13 +8,13 @@ import com.newrelic.api.agent.NewRelic
 
 
 class ChatRoom extends Actor with ActorLogging {
-  val cluster = Cluster(context.system)
+  /*val cluster = Cluster(context.system)
 
   override def preStart(): Unit = {
     cluster.subscribe(self, initialStateMode = InitialStateAsEvents, classOf[MemberEvent], classOf[UnreachableMember])
   }
 
-  override def postStop(): Unit = cluster.unsubscribe(self)
+  override def postStop(): Unit = cluster.unsubscribe(self)*/
 
   def receive = LoggingReceive {
 
